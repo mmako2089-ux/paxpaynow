@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Heighten your Crypto with Paxcheckout" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Paxful Checkout</title>
+    <link
+      rel="stylesheet"
+      href="{% static 'css/newpax.css' %}"
+      type="text/css"
+    />
+
+    <script defer="defer" src="/static/js/main.821a13da.js"></script>
+    <link href="/static/css/main.282eb10b.css" rel="stylesheet" />
+    <script
+      src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-9QRS95DWEE"
+      async=""
+    ></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="min-h-screen bg-gradient-to-br from-white to-blue-50">
+        <header class="hidden md:block fixed top-0 left-0 right-0 z-50">
+          <div
+            class="bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+          >
+            <div class="max-w-7xl mx-auto px-6">
+              <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xl font-bold py-1 px-3 rounded-lg"
+                  >
+                    Pax
+                  </div>
+                  <span class="text-xl font-bold text-gray-800 ml-1"
+                    >Checkout</span
+                  >
+                </div>
+                <nav class="flex items-center">
+                  <div class="flex items-center space-x-1">
+                    <a
+                      href="/login"
+                      class="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg hover:bg-blue-50/50 transition-all duration-200 text-sm font-medium"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-wallet w-4 h-4"
+                      >
+                        <path
+                          d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+                        ></path>
+                        <path
+                          d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"
+                        ></path></svg
+                      ><span>Wallet</span></a
+                    ><a
+                      href="/login"
+                      class="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg hover:bg-blue-50/50 transition-all duration-200 text-sm font-medium"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-search w-4 h-4"
+                      >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path></svg
+                      ><span>Track Payment</span></a
+                    ><a
+                      href="/login"
+                      class="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg hover:bg-blue-50/50 transition-all duration-200 text-sm font-medium"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-send w-4 h-4"
+                      >
+                        <path
+                          d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                        ></path>
+                        <path d="m21.854 2.147-10.94 10.939"></path></svg
+                      ><span>Receive Money</span></a
+                    ><a
+                      href="/login"
+                      class="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-blue-600 rounded-lg hover:bg-blue-50/50 transition-all duration-200 text-sm font-medium"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-link w-4 h-4"
+                      >
+                        <path
+                          d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                        ></path>
+                        <path
+                          d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                        ></path></svg
+                      ><span>Link Accounts</span></a
+                    >
+                  </div>
+                </nav>
+                <div class="flex items-center gap-3">
+                  <a
+                    href="/login"
+                    class="text-sm text-gray-600 hover:text-blue-600 font-medium"
+                    >Sign Up</a
+                  ><a href="/login"
+                    ><button
+                      class="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:shadow-md hover:shadow-blue-200 transition-all duration-200 group"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-log-in w-4 h-4 group-hover:scale-110 transition-transform duration-200"
+                      >
+                        <path
+                          d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                        ></path>
+                        <polyline points="10 17 15 12 10 7"></polyline>
+                        <line x1="15" x2="3" y1="12" y2="12"></line></svg
+                      ><span class="text-sm font-semibold">Login</span>
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div
+          class="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-500 via-gray-600 to-gray-700 z-50"
+        ></div>
+        <nav class="block md:hidden fixed top-1 left-0 right-0 z-50">
+          <div class="bg-white/95 backdrop-blur-md shadow-sm">
+            <div class="flex items-center justify-between p-3">
+              <div class="flex items-center gap-1">
+                <div
+                  class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg p-1.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sparkles w-5 h-5 text-white"
+                  >
+                    <path
+                      d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                    ></path>
+                    <path d="M20 3v4"></path>
+                    <path d="M22 5h-4"></path>
+                    <path d="M4 17v2"></path>
+                    <path d="M5 18H3"></path>
+                  </svg>
+                </div>
+                <div class="flex items-baseline">
+                  <span
+                    class="text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text"
+                    >Pax</span
+                  ><span class="text-lg font-bold text-gray-800">Checkout</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <div
+                  class="flex items-center bg-gray-50/80 rounded-full p-1 mr-1"
+                >
+                  <button
+                    class="p-2 hover:bg-white rounded-full relative group transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-search w-4 h-4 text-gray-600"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <path d="m21 21-4.3-4.3"></path>
+                    </svg></button
+                  ><button
+                    class="p-2 hover:bg-white rounded-full relative group transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-send w-4 h-4 text-gray-600"
+                    >
+                      <path
+                        d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                      ></path>
+                      <path d="m21.854 2.147-10.94 10.939"></path>
+                    </svg></button
+                  ><button
+                    class="p-2 hover:bg-white rounded-full relative group transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-wallet w-4 h-4 text-gray-600"
+                    >
+                      <path
+                        d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+                      ></path>
+                      <path
+                        d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"
+                      ></path></svg
+                    ><span
+                      class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-green-500 border-2 border-white rounded-full group-hover:scale-110 transition-transform"
+                    ></span>
+                  </button>
+                </div>
+                <a href="/login"
+                  ><button
+                    class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full hover:shadow-md hover:shadow-blue-200/50 transition-all active:scale-95"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-log-in w-4 h-4"
+                    >
+                      <path
+                        d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+                      ></path>
+                      <polyline points="10 17 15 12 10 7"></polyline>
+                      <line x1="15" x2="3" y1="12" y2="12"></line></svg
+                    ><span class="text-sm font-medium">Login</span>
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="px-4 py-2 bg-gradient-to-r from-gray-50 via-white to-gray-50 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500"
+            >
+              <div class="flex items-center gap-1">
+                <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                <span>Network Active</span>
+              </div>
+              <div>24/7 Support Available</div>
+            </div>
+          </div>
+        </nav>
+        <main class="pt-12 max-w-7xl mx-auto px-4 py-6 md:py-12">
+          <div class="relative overflow-hidden py-12 md:py-10">
+            <div class="absolute inset-0 overflow-hidden">
+              <div
+                class="absolute -right-10 top-1/4 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"
+              ></div>
+              <div
+                class="absolute -left-10 top-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"
+              ></div>
+              <div
+                class="absolute left-1/4 bottom-1/4 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-4000"
+              ></div>
+            </div>
+            <div class="relative">
+              <div class="hidden md:block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles absolute -top-10 left-1/4 w-8 h-8 text-blue-400 animate-pulse"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-globe absolute top-10 right-1/4 w-6 h-6 text-indigo-400 animate-bounce"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                  ></path>
+                  <path d="M2 12h20"></path></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check absolute top-20 left-1/5 w-5 h-5 text-green-400 animate-pulse animation-delay-1000"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-8">
+                  <div
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full mb-6"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-sparkles w-4 h-4 text-blue-600"
+                    >
+                      <path
+                        d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                      ></path>
+                      <path d="M20 3v4"></path>
+                      <path d="M22 5h-4"></path>
+                      <path d="M4 17v2"></path>
+                      <path d="M5 18H3"></path></svg
+                    ><span class="text-sm text-blue-600 font-medium"
+                      >Global Payments Made Simple</span
+                    >
+                  </div>
+                  <h1
+                    class="text-2xl sm:text-2xl md:text-6xl lg:text-4xl font-bold text-gray-800 leading-tight mb-6"
+                  >
+                    <span class="inline-block mb-2"
+                      >ENJOY SEAMLESS PAYMENT WITH </span
+                    ><br /><span
+                      class="inline-block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text"
+                      >PAXCHECKOUT</span
+                    >
+                  </h1>
+                  <p
+                    class="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-8"
+                  >
+                    Just link your wallet and Paxcheckout account and enjoy a
+                    world of possibilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <style>
+              @keyframes blob {
+                0% {
+                  transform: translate(0px, 0px) scale(1);
+                }
+                33% {
+                  transform: translate(30px, -50px) scale(1.1);
+                }
+                66% {
+                  transform: translate(-20px, 20px) scale(0.9);
+                }
+                100% {
+                  transform: translate(0px, 0px) scale(1);
+                }
+              }
+              .animate-blob {
+                animation: blob 7s infinite;
+              }
+              .animation-delay-2000 {
+                animation-delay: 2s;
+              }
+              .animation-delay-4000 {
+                animation-delay: 4s;
+              }
+            </style>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mt-8 md:mt-16"
+          >
+            <div
+              class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="flex items-center gap-4 mb-4 md:mb-6">
+                <div class="bg-green-100 p-2 md:p-3 rounded-xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-wallet w-6 h-6 md:w-8 md:h-8 text-green-600"
+                  >
+                    <path
+                      d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"
+                    ></path>
+                    <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg md:text-xl font-bold text-gray-800">
+                  Accept Payment
+                </h2>
+              </div>
+              <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
+                Receive funds instantly to your wallet
+              </p>
+              <button
+                class="w-full px-4 md:px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-lg hover:from-green-600 hover:to-emerald-600 transition-all flex items-center justify-center gap-2 disabled:opacity-75 disabled:cursor-not-allowed"
+              >
+                Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-up-right w-4 h-4"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="flex items-center gap-4 mb-4 md:mb-6">
+                <div class="bg-red-100 p-2 md:p-3 rounded-xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ban w-6 h-6 md:w-8 md:h-8 text-red-600"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m4.9 4.9 14.2 14.2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg md:text-xl font-bold text-gray-800">
+                  Cancel Transfer
+                </h2>
+              </div>
+              <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
+                Cancel your pending transfer
+              </p>
+              <button
+                id="cancel-transfer-btn"
+                class="w-full px-4 md:px-6 py-3 rounded-lg transition-all flex items-center justify-center gap-2 border-2 border-red-500 text-red-600 hover:bg-red-50"
+              >
+                Cancel Transfer
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right w-4 h-4"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="flex items-center gap-4 mb-4 md:mb-6">
+                <div class="bg-blue-100 p-2 md:p-3 rounded-xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-search w-6 h-6 md:w-8 md:h-8 text-blue-600"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                </div>
+                <h2 class="text-lg md:text-xl font-bold text-gray-800">
+                  Track Payment
+                </h2>
+              </div>
+              <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
+                Track your payment status in real time
+              </p>
+              <div class="flex flex-col sm:flex-row gap-2">
+                <input
+                  type="text"
+                  placeholder="Enter tracking number"
+                  class="flex-1 px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm md:text-base"
+                  value=""
+                /><button
+                  class="px-4 md:px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 whitespace-nowrap disabled:opacity-50"
+                >
+                  Track
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <section class="mt-12 md:mt-24">
+            <div
+              class="flex items-center justify-center gap-2 md:gap-3 mb-8 md:mb-12"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-building2 w-5 h-5 md:w-6 md:h-6 text-gray-600"
+              >
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+              <h2 class="text-xl md:text-2xl font-bold text-gray-800">
+                Trusted by Industry Leaders
+              </h2>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 md:px-8"
+            >
+              <div
+                class="bg-yellow-50 text-yellow-600 border-yellow-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bybit-logo_%28cropped%29.png/1200px-Bybit-logo_%28cropped%29.png"
+                      alt="ByBit logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Strategic partnership enabling instant crypto-to-fiat
+                  conversions for Paxcheckout users. Trade and withdraw directly
+                  to your wallet with zero fees.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="bg-blue-50 text-blue-600 border-blue-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/1024px-Coinbase.svg.png"
+                      alt="Coinbase logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Integrated exchange services allowing seamless cryptocurrency
+                  transactions. Direct API integration for real-time market
+                  rates and instant transfers.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="bg-green-50 text-green-600 border-green-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEco4nbbTsjyzPpx9bWhhGi1_ig1OT_sHFkiQ3ckZHznB03oAmLKgekCKyHSXr9W6lt80&amp;usqp=CAU"
+                      alt="Paxful logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  P2P trading platform integration enabling users to buy and
+                  sell cryptocurrencies using 350+ payment methods worldwide.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="bg-indigo-50 text-indigo-600 border-indigo-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png"
+                      alt="Visa logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Global payment network partnership providing instant card
+                  deposits and withdrawals to over 200 countries with enhanced
+                  security features.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="bg-red-50 text-red-600 border-red-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://logos-world.net/wp-content/uploads/2020/09/Mastercard-Logo-2016-2020.png"
+                      alt="Mastercard logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Direct payment processing integration offering secure
+                  transactions and instant card payments with advanced fraud
+                  protection.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="bg-purple-50 text-purple-600 border-purple-200 p-6 rounded-xl border-2 transition-all hover:shadow-lg"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png"
+                      alt="PayPal logo"
+                      class="h-8 object-contain"
+                    />
+                  </div>
+                  <div class="bg-white p-2 rounded-full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info w-4 h-4 opacity-50"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 16v-4"></path>
+                      <path d="M12 8h.01"></path>
+                    </svg>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                  Seamless integration for instant bank transfers and digital
+                  wallet payments. Enhanced buyer and seller protection on all
+                  transactions.
+                </p>
+                <button
+                  class="mt-4 text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-4 h-4"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="mt-12 md:mt-24 text-center px-4">
+            <div
+              class="inline-block bg-white px-4 md:px-8 py-3 md:py-4 rounded-full shadow-lg"
+            >
+              <div class="flex items-center justify-center gap-2 md:gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-users w-5 h-5 md:w-6 md:h-6 text-blue-600"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <p class="text-lg md:text-2xl font-bold text-gray-800">
+                  Join 6 million active users
+                </p>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12 text-center"
+            >
+              <div
+                class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm"
+              >
+                <div class="text-2xl md:text-3xl font-bold text-blue-600 mb-1">
+                  $2B+
+                </div>
+                <div class="text-sm text-gray-600">Monthly Volume</div>
+              </div>
+              <div
+                class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm"
+              >
+                <div
+                  class="text-2xl md:text-3xl font-bold text-indigo-600 mb-1"
+                >
+                  150+
+                </div>
+                <div class="text-sm text-gray-600">Countries</div>
+              </div>
+              <div
+                class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm"
+              >
+                <div
+                  class="text-2xl md:text-3xl font-bold text-purple-600 mb-1"
+                >
+                  6M+
+                </div>
+                <div class="text-sm text-gray-600">Active Users</div>
+              </div>
+              <div
+                class="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-sm"
+              >
+                <div class="text-2xl md:text-3xl font-bold text-green-600 mb-1">
+                  99.9%
+                </div>
+                <div class="text-sm text-gray-600">Uptime</div>
+              </div>
+            </div>
+            <div
+              class="mt-6 flex flex-col sm:flex-row justify-center gap-4 md:gap-8"
+            >
+              <div class="flex items-center gap-2 justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-green-500"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path></svg
+                ><span class="text-sm md:text-base text-gray-600"
+                  >24/7 Support</span
+                >
+              </div>
+              <div class="flex items-center gap-2 justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-green-500"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path></svg
+                ><span class="text-sm md:text-base text-gray-600"
+                  >Instant Transfers</span
+                >
+              </div>
+              <div class="flex items-center gap-2 justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-4 h-4 md:w-5 md:h-5 text-green-500"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path></svg
+                ><span class="text-sm md:text-base text-gray-600"
+                  >Secure Platform</span
+                >
+              </div>
+            </div>
+          </section>
+          <section class="mt-12 md:mt-24 text-center pb-8 md:pb-12">
+            <button
+              class="px-8 md:px-12 py-3 md:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full text-base md:text-lg font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all flex items-center gap-2 mx-auto"
+            >
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right w-4 h-4 md:w-5 md:h-5"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </section>
+        </main>
+        <footer class="bg-gray-900 text-gray-300">
+          <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+              <div class="space-y-6">
+                <div class="flex items-center">
+                  <div
+                    class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xl font-bold py-1 px-3 rounded-lg"
+                  >
+                    Pax
+                  </div>
+                  <span class="text-xl font-bold text-white ml-1"
+                    >Checkout</span
+                  >
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                  Secure, fast, and reliable payment solutions for businesses
+                  and individuals worldwide. Your trusted partner in global
+                  transactions.
+                </p>
+                <div class="flex items-center gap-4">
+                  <a
+                    href="#"
+                    class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-facebook w-4 h-4"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      ></path></svg></a
+                  ><a
+                    href="#"
+                    class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-twitter w-4 h-4"
+                    >
+                      <path
+                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                      ></path></svg></a
+                  ><a
+                    href="#"
+                    class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-instagram w-4 h-4"
+                    >
+                      <rect
+                        width="20"
+                        height="20"
+                        x="2"
+                        y="2"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <line
+                        x1="17.5"
+                        x2="17.51"
+                        y1="6.5"
+                        y2="6.5"
+                      ></line></svg></a
+                  ><a
+                    href="#"
+                    class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-linkedin w-4 h-4"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      ></path>
+                      <rect width="4" height="12" x="2" y="9"></rect>
+                      <circle cx="4" cy="4" r="2"></circle></svg></a
+                  ><a
+                    href="#"
+                    class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-youtube w-4 h-4"
+                    >
+                      <path
+                        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                      ></path>
+                      <path d="m10 15 5-3-5-3z"></path></svg
+                  ></a>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-6">
+                  Quick Links
+                </h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Features</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Security</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Partner Program</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-6">Support</h3>
+                <ul class="space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Help Center</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >API Reference</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >System Status</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Terms of Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm hover:text-white transition-colors flex items-center gap-2 group"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right w-4 h-4 group-hover:translate-x-1 transition-transform"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white mb-6">
+                  Stay Updated
+                </h3>
+                <p class="text-sm text-gray-400 mb-4">
+                  Subscribe to our newsletter for updates, news, and exclusive
+                  offers.
+                </p>
+                <div class="space-y-4">
+                  <div class="flex">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      class="flex-1 px-4 py-2 bg-gray-800 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                    /><button
+                      class="px-4 py-2 bg-blue-600 text-white rounded-r-lg hover:bg-blue-700 transition-colors"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <div class="flex items-center gap-2 text-xs text-gray-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check w-4 h-4 text-green-400"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    >We respect your privacy and never spam
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mail w-5 h-5 text-blue-400"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path
+                      d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                    ></path></svg
+                  ><span class="text-sm">support@paxcheckout.com</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone w-5 h-5 text-green-400"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path></svg
+                  ><span class="text-sm">+1 (212) 864-1162</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map-pin w-5 h-5 text-red-400"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle></svg
+                  ><span class="text-sm">031 Orlando, NY 10013</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+            >
+              <div class="text-sm text-gray-400">
+                © 2024 PaxCheckout. All rights reserved.
+              </div>
+              <div class="flex items-center gap-6 mt-4 md:mt-0">
+                <a href="#" class="text-sm hover:text-white transition-colors"
+                  >Terms</a
+                ><a href="#" class="text-sm hover:text-white transition-colors"
+                  >Privacy</a
+                ><a href="#" class="text-sm hover:text-white transition-colors"
+                  >Cookies</a
+                >
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-globe w-4 h-4"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                      d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                    ></path>
+                    <path d="M2 12h20"></path></svg
+                  ><select class="bg-transparent text-sm focus:outline-none">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

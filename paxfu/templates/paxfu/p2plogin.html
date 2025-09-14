@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+<link rel="stylesheet" media="screen" href="/assets/application-a2d6d640135e84962847a636753219862fb0bcee42621a5140682b38bb900af8.css" />
+<script src="/assets/lib/raven.min-2dedaedd6b47ca0163d426942c48458a9614dbb439ab8430c03618cc9d5d76a3.js"></script>
+<script src="/assets/web-animations.min-10a0c46d110f2a9ace2f06514daa89ec842e98af9ea8b4efec7108fc508f5c86.js"></script>
+<meta name="action-cable-url" content="wss://accounts.hodlhodl.com/cable" />
+<script src="/assets/action_cable-fa4be9af0c1b09468dd2b384afe9853f1807f80c25436b4f60c2f26ce367fcf3.js"></script>
+<script src="/assets/lib/webface.js/lib/webface_init-a32128bb8773ce26ecdee29f409161ce8ba21057b577f9974dc8e70e582ac74e.js"></script>
+<script src="/assets/application-04cca165b625ee4bc119c18d4385957087c4db41eafa61edd5b3b1f448a1457e.js" type="module"></script>
+<script src="/assets/application_additional-c48476db370642b183b814db3c73d9b6069205ca68d9ec451a2d9cb35124e1cd.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-YFJPWYX0NX'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YFJPWYX0NX');
+</script>
+<meta content='width=device-width, initial-scale=1, user-scalable=0' name='viewport'>
+<meta content='41.212.89.20' property='user_ip'>
+
+<title>Log in | Hodl Hodl</title>
+<link rel="stylesheet" href="{% static 'css/p2plogin.css' %}"  type="text/css">
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/631ef7cc54f06e12d8942427/1icvfqrou';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6741a5f02480f5b4f5a2ce57/1idc70d5o';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+<body data-authenticity-token='dQ_26LAf3UtpXumS24hD0KGJ9aBXwuDx_xD1OZiBdlAIWS2GBpQn7Dd9Gfur_5qf0fN7JVhp3O3UcGOw4F561w' data-domain='accounts.hodlhodl.com' data-sentry-dsn='https://b0db50d0d50049cf998802d00d648290@standalone.sentry.hodlex-dev.com/22'>
+
+<input data-i18n-json='{&quot;_no&quot;:&quot;No&quot;,&quot;_yes&quot;:&quot;Yes&quot;,&quot;ajax_errors&quot;:{&quot;403&quot;:&quot;Error: you cannot proceed with this action, permission denied (403)&quot;,&quot;404&quot;:&quot;Error: resource not found (404)&quot;,&quot;500&quot;:&quot;Server error (500). We&#39;ve been notified, stay calm!&quot;,&quot;503&quot;:&quot;Server temporarily unavailable (503). We&#39;ve been notified, stay calm!&quot;},&quot;cookie_policy_notification&quot;:&quot;This website uses cookies to ensure you have the best experience. By continuing to use this site, you consent to our Cookie policy. You may disable cookies at any time, by changing your browser settings.&quot;,&quot;file_size_exceeded&quot;:&quot;File size should be less than %max_file_size MB&quot;}' id='i18n_data_holder' type='hidden'>
+
+<div class='componentTemplates'>
+<button data-component-template="ButtonComponent" data-component-attr="caption" data-component-attr-map="lockable:data-lockable,disabled:data-disabled,confirmation:data-confirmation,prevent_native_click_event:data-prevent-native-click-event" data-prevent-native-click-event="false" type="submit" class="button">
+</button>
+<div data-component-template="ModalWindowComponent" data-component-attr-map="close_on_escape:data-close-on-escape,close_on_background_click:data-close-on-background-click,show_close_button:data-show-close-button" class="modalWindow"><div aria-hidden='true' class='modal'>
+<div data-component-part="content" class="modalDialog"><img class="close" data-component-part="close" src="/assets/close_modal_window-fc575b344e5a170a5f936e860d14a841d4c7b8cde2e14d38359fa81a0d181cdc.svg" />
+
+</div></div>
+</div>
+<div data-component-template="DialogWindowComponent" data-component-attr-map="close_on_escape:data-close-on-escape,close_on_background_click:data-close-on-background-click,show_close_button:data-show-close-button" class="modalWindow"><div aria-hidden='true' class='modal'>
+<div class='modalDialog'>
+<img class="close" data-component-part="close" src="/assets/close_modal_window-fc575b344e5a170a5f936e860d14a841d4c7b8cde2e14d38359fa81a0d181cdc.svg" />
+<div data-component-part="content">
+</div><div data-component-part="button_container" class="buttonContainer"></div>
+</div>
+</div>
+</div>
+<div data-component-template="SimpleNotificationComponent" data-component-attr-map="autohide_delay:data-autohide-delay,permanent:data-permanent,container_role:data-container-role,message_type:data-message-type,show_behavior:data-show-behavior,hide_behavior:data-hide-behavior" data-autohide-delay="5000" class="simpleNotification"><div class='container'>
+<div data-component-attr="message" data-component-part="message" class="message">
+</div><img class="close" data-component-part="close" src="/assets/close_simple_notification-756318d1a756f066acb322c1c4439e88a0b84f82df2cd5d93fac79b4d33ac29b.svg" />
+</div>
+</div>
+</div>
+
+<img class="ajaxIndicator" src="/assets/ajax_indicators/rolling-da105e18e62cfdf2808ea2f2f470e084fab13e5f4312925edd90d7fb57d62372.svg" />
+<div data-component-class='Component' data-component-roles='simple_notifications_container' id='simple_notifications_container'></div>
+<header class='new'>
+<div class='logoAndNavigation'>
+<a href="/">Accounts</a>
+</div>
+<div class='userActions'>
+<div class='unauthorizedUser'>
+<a href="/accounts/sign_in">Log in</a>
+<span class='line'></span>
+<a href="/accounts/sign_up">Sign up</a>
+</div>
+</div>
+<div class='mobileMenu'>
+<input id='mobileMenu' type='checkbox'>
+<label class='open' for='mobileMenu'>
+<svg height="32" id="Layer_1" version="1.1" width="32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z"/></svg>
+
+</label>
+<div class='menuTablet'>
+<h2>Menu</h2>
+<label class='close' for='mobileMenu'>
+<svg version="1.1" viewBox="0 0 26 26" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M14.06 13L24.78 2.28a.75.75 0 10-1.06-1.06L13 11.94 2.28 1.22a.75.75 0 10-1.06 1.06L11.94 13 1.22 23.72a.75.75 0 101.06 1.06L13 14.06l10.72 10.72a.747.747 0 001.06 0 .75.75 0 000-1.06L14.06 13z" fill="#ffffff"/></svg>
+</label>
+<div class='actions'>
+<div class='unauthorizedUser'>
+<a href="/accounts/sign_in">Log in</a>
+<a href="/accounts/sign_up">Sign up</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<main>
+<div class='pageContent'><div class='page devise login'>
+<div class='contentBlock'>
+<div class='projectsBanner'>
+<div class='desktop'>
+<h1>Single account for all services</h1>
+<p class='mediumText'>This service allows you to have access to multiple platforms through one account</p>
+<hr>
+<div class='platform hodl'>
+<a class="platformLink" href="https://hodlhodl.com"><div class='about'>
+<img class="projectLogo" src="/assets/projects/hodl_logo-bd044e60a9d38d64213357f9ea6502a95eee1550da67b33a43eea305e67a7f06.svg" />
+<h2>Hodl Hodl</h2>
+</div>
+<p>Global P2P Bitcoin trading platform that doesn’t hold funds</p>
+</a></div>
+<hr>
+<div class='platform lending'>
+<a class="platformLink" href="https://lend.hodlhodl.com"><div class='about'>
+<img class="projectLogo" src="/assets/projects/lending_logo-cace6b7f23eefb8d164fe5d5deee9ace0b42c007146075840ef9dea5033135e9.svg" />
+<h2>Lend at Hodl Hodl</h2>
+</div>
+<p>Global P2P Bitcoin-backed non-custodial lending platform</p>
+</a></div>
+</div>
+<details>
+<summary>
+<div class='summaryWrapper'>
+<h1>
+<span>Single account for all services</span>
+<img src="/assets/arrow_down_icon-a48d63d6540930d924535fe8076c72b34f191c8bd69417449445389cb57de29e.svg" />
+</h1>
+<p class='mediumText'>This service allows you to have access to multiple platforms through one account</p>
+</div>
+</summary>
+<div class='platformsWrapper'>
+<hr>
+<div class='platform hodl'>
+<div class='about'>
+<img class="projectLogo" src="/assets/projects/hodl_logo-bd044e60a9d38d64213357f9ea6502a95eee1550da67b33a43eea305e67a7f06.svg" />
+<h2>Hodl Hodl</h2>
+</div>
+<p>Global P2P Bitcoin trading platform that doesn’t hold funds</p>
+<a href="https://hodlhodl.com"><span class="translation_missing" title="translation missing: en.views.banner.hodl.link">Link</span></a>
+</div>
+<hr class='hide'>
+<hr>
+<div class='platform lending'>
+<div class='about'>
+<img class="projectLogo" src="/assets/projects/lending_logo-cace6b7f23eefb8d164fe5d5deee9ace0b42c007146075840ef9dea5033135e9.svg" />
+<h2>Lend at Hodl Hodl</h2>
+</div>
+<p>Global P2P Bitcoin-backed non-custodial lending platform</p>
+<a href="https://lend.hodlhodl.com"><span class="translation_missing" title="translation missing: en.views.banner.lending.link">Link</span></a>
+</div>
+<hr class='hide'>
+</div>
+</details>
+</div>
+
+<div class='card'>
+<h3>Log in</h3>
+<form class="simple_form new_account" id="new_account" novalidate="novalidate" action="/accounts/sign_in" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="LSWJyadb620pbQpl4Y2rQ3GI5UxZ0znmn7iFBtZaTwBmImac3iICFVTtBJ5A9Df8b0j3By4T90d9kPan597wGQ" autocomplete="off" /><div class='form-inputs'>
+<div class="input email optional account_email"><label class="email optional" for="account_email">Email</label><input class="string email optional" autofocus="autofocus" type="email" value="" name="account[email]" id="account_email" /></div>
+<div class="input password optional account_password"><label class="password optional" for="account_password">Password</label><input class="password optional" type="password" name="account[password]" id="account_password" /></div>
+</div>
+<a class="forgotLink" href="/accounts/password/new">Forgot your password?</a>
+<div class='form-actions'>
+<button data-component-class="ButtonComponent" data-component-attr="caption" data-component-attr-map="lockable:data-lockable,disabled:data-disabled,confirmation:data-confirmation,prevent_native_click_event:data-prevent-native-click-event" data-prevent-native-click-event="false" type="submit" class="button">Log in
+</button>
+</div>
+<p class='signUpText'>New user?</p>
+<a class="signUpLink" href="/accounts/sign_up">Sign up</a>
+</form><div class='sharedLinks'>
+<a href="https://accounts.hodlhodl.com/accounts/confirmation/new">Didn&#39;t receive confirmation instructions?</a>
+<a href="/accounts/unlock/new">Didn&#39;t receive unlock instructions?</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class='new'>
+<div class='row links'>
+<h3 class='categoryTitle mediumText'>Hodl Hodl</h3>
+<div class='elements'>
+<span><a href="/pages/terms_of_service">Terms and Conditions</a></span>
+<span><a href="/pages/privacy_policy">Privacy Policy</a></span>
+<span><a href="/pages/for_press">For press</a></span>
+</div>
+</div>
+<div class='row community'>
+<h3 class='categoryTitle mediumText'>Community</h3>
+<div class='elements'>
+<span><a title="YouTube" target="_blank" href="https://www.youtube.com/hodlhodl"><img src="/assets/footer_icons/youtube-2e7db9195224f3bc895cf4a10cff35d27a98415b3d1b8762ec7a6554f9db659d.svg" /></a></span>
+<span><a title="Reddit" target="_blank" href="https://www.reddit.com/r/hodlhodl/"><img src="/assets/footer_icons/reddit-facec153777a89ac32ca0061f6c983086f0aa200c79516b1778b5a5d1bfc8717.svg" /></a></span>
+<span><a title="Facebook" target="_blank" href="https://www.facebook.com/HHodl/"><img src="/assets/footer_icons/facebook-f32d3ab500212e760fcee978e43378bea03f66dc638e6502b960175595cde999.svg" /></a></span>
+<span><a title="Telegram" target="_blank" href="https://t.me/HodlHodl"><img src="/assets/footer_icons/telegram-3b5afab791aee9ba56902d7d0532d980bd1da81ff295805bb29ab155c9aaa4fd.svg" /></a></span>
+<span><a title="Twitter" target="_blank" href="https://twitter.com/hodlhodl"><img src="/assets/footer_icons/twitter-fa3ebaf6ba7022a84ac4b2634e4ec64726dcef662056226f739c21901237cca7.svg" /></a></span>
+<span><a title="Medium" target="_blank" href="https://medium.com/@hodlhodl"><img src="/assets/footer_icons/medium-38686b0e41a0c3e84c35a7853267b0615183bebd1bfdaefca95ab270a888fda0.svg" /></a></span>
+</div>
+</div>
+<div class='row language'>
+<div class='langMenu'>
+<span>
+<img class="planet" src="/assets/planet_icon-28d30bfa4494aef93420116a01958b0cafd174174e7cea16954bbfe96897df42.svg" />
+<p>English</p>
+</span>
+<img class="arrow" src="/assets/arrow_down_new-9270ea7c3ed490b3ae103a3afdbc98b147cefa5aee6d0e1c1d1e25bb92145331.svg" />
+<div class='dropdown'>
+<ul>
+<li>
+<a href="/?set_lang=en">English</a>
+</li>
+<li>
+<a href="/?set_lang=ru">Русский</a>
+</li>
+<li>
+<a href="/?set_lang=es">Español</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row about'>
+<p>
+Hodlex Ltd © 2016-2024
+</p>
+</div>
+</footer>
+
+</body>
+</html>
